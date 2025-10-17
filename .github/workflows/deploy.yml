@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-deploy:
-    if: github.repository == 'sonyeongeun/capstoneDesign_HEJZ'
+    if: github.repository == 'songyeongeun/capstoneDesign_HEJZ'
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: yeongeunsong/ustar-back
