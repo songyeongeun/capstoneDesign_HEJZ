@@ -24,7 +24,9 @@ jobs:
 
       - name: Gradle build
         working-directory: HEJZ_back
-        run: ./gradlew clean build -x test
+        run: |
+          chmod +x ./gradlew
+          ./gradlew clean build -x test
 
       - name: Docker login
         uses: docker/login-action@v3
